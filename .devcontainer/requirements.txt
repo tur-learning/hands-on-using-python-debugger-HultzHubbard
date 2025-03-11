@@ -1,0 +1,5 @@
+thefuzz
+scipy
+shapely
+geopy
+requests

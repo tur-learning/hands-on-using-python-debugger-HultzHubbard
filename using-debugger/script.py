@@ -1,7 +1,7 @@
 def find_even_numbers(numbers):
     evens = []
     for num in numbers:
-        if num % 2 == 1:
+        if num % 2 == 0:
             evens.append(num)
     return evens
 
@@ -12,7 +12,7 @@ print("Even numbers:", result)
 
 def sum_numbers(n):
     total = 0
-    for i in range(1, n):
+    for i in range(1, n+1):
         total += i
     return total
 
@@ -24,7 +24,10 @@ print(f"Sum of first {n} numbers (computed):", result)
 
 
 def factorial(n):
+    if n == 0:
+        return 1
     return n * factorial(n-1)
+        
 
 num = 5
 result = factorial(num)
